@@ -1,0 +1,13 @@
+D:\SWX API\Code\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\SWX API\Code\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\SWX API\Code\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\SWX API\Code\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+D:\SWX API\Code\WindowsFormsApp1\obj\Debug\Interop.SldWorks.dll
+D:\SWX API\Code\WindowsFormsApp1\obj\Debug\Interop.SwConst.dll
+D:\SWX API\Code\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.ResolveComReference.cache
+D:\SWX API\Code\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\SWX API\Code\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\SWX API\Code\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\SWX API\Code\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\SWX API\Code\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\SWX API\Code\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
