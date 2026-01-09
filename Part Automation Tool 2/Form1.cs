@@ -1,0 +1,140 @@
+﻿using SldWorks;
+using SwConst;
+using System;
+
+using System.Windows.Forms;
+
+namespace WindowsFormsApp9
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+       
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e) //btnBuild click event
+        {
+            SldWorks.SldWorks swApp = new SldWorks.SldWorks();
+            ModelDoc2 swModel;
+            string parttemplate = "";
+            parttemplate = swApp.GetUserPreferenceStringValue((int)swUserPreferenceStringValue_e.swDefaultTemplatePart);
+            //Part = (ModelDoc2)swApp.NewDocument("C:\\ProgramData\\SOLIDWORKS\\SOLIDWORKS  2017\ emplates\\Part.prtdot", 0, 0, 0);
+
+
+            //new part document
+           swModel = (ModelDoc2)swApp.NewDocument(parttemplate, 0, 0, 0);
+
+            swModel.SketchManager.AddToDB = true;
+
+            swModel.SetUserPreferenceIntegerValue((int)swUserPreferenceIntegerValue_e.swUnitsLinear, (int)swLengthUnit_e.swMM);
+
+            bool boolstat;
+            boolstat = swModel.Extension.SelectByID2("Front Plane", "PLANE", 0, 0, 0, false, 0, null, 0);
+            swModel.SketchManager.InsertSketch(true);
+
+            if (rbtnRectangle.Checked == true)
+            {
+                double height, width;
+                height = double.Parse(txtHeight.Text) / 1000;
+                width = double.Parse(txtWidth.Text) / 1000;
+
+                //Unsuppress the dimension dialog box
+                swApp.SetUserPreferenceToggle((int)swUserPreferenceToggle_e.swInputDimValOnCreate, false);
+
+                SldWorks.SketchSegment SketchSegmentObj;
+                SketchSegmentObj = swModel.SketchManager.CreateLine(0.05, 0.05, 0, 0.05, 0.05 + height, 0);
+                swModel.AddDimension2(0, 0.05 + height / 2, 0);
+
+                swModel.SketchManager.CreateLine(0.05, 0.05 + height, 0, 0.05 + width, 0.05 + height, 0);
+                swModel.SketchManager.CreateLine(0.05 + width, 0.05 + height, 0, 0.05 + width, 0.05, 0);
+                swModel.SketchManager.CreateLine(0.05 + width, 0.05, 0, 0.05, 0.05, 0);
+                swModel.AddDimension2(0.05 + width / 2, 0, 0);
+                swModel.ClearSelection2(true);
+
+                //select the origin
+                swModel.Extension.SelectByID2("", "EXTSKETCHPOINT", 0, 0, 0, false, 0, null, 0);
+                //select an endpoint on profile
+                swModel.Extension.SelectByID2("", "SKETCHPOINT", 0.05, 0.05, 0, true, 0, null, 0);
+                //add a verticle dimension
+                swModel.AddVerticalDimension2(0, 0.025, 0);
+                swModel.ClearSelection2(true);
+
+                //select the origin
+                swModel.Extension.SelectByID2("", "EXTSKETCHPOINT", 0, 0, 0, false, 0, null, 0);
+                //select an endpoint on profile
+                swModel.Extension.SelectByID2("", "SKETCHPOINT", 0.05, 0.05, 0, true, 0, null, 0);
+                //add a verticle dimension
+                swModel.AddHorizontalDimension2(0.025, 0, 0);
+                swModel.ClearSelection2(true);
+
+                SelectionMgr swSelMgr = (SelectionMgr)swModel.SelectionManager;
+                SelectData swSelData = (SelectData)swSelMgr.CreateSelectData();
+                boolstat = SketchSegmentObj.Select4(true, swSelData);
+
+                if (boolstat == false)
+                { MessageBox.Show("Failed to select sketch segment for offset."); }
+                //create offset from selected edge
+                swModel.SketchOffset2(0.002, false, true);
+                swModel.ViewZoomtofit2();
+                
+            }
+
+            if (rbtnCircle.Checked == true)
+            {
+                double radius;
+                radius = double.Parse(txtRadius.Text) / 1000;
+                swModel.SketchManager.CreateCircleByRadius(0.05 + radius, 0.05 + radius, 0, radius);
+                swModel.SketchOffset2(0.002, false, true);
+                swModel.ViewZoomtofit2();
+            }
+
+            swModel.SketchManager.AddToDB = false;
+
+
+
+        }
+
+        private void rbtnRevolve_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtWidth_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+    }
+
+
+
+   
