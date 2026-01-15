@@ -1,0 +1,30 @@
+P:\VB.NET\SWX\WindowsFormsApp9\bin\Debug\WindowsFormsApp9.exe.config
+P:\VB.NET\SWX\WindowsFormsApp9\bin\Debug\WindowsFormsApp9.exe
+P:\VB.NET\SWX\WindowsFormsApp9\bin\Debug\WindowsFormsApp9.pdb
+P:\VB.NET\SWX\WindowsFormsApp9\obj\Debug\WindowsFormsApp9.csproj.AssemblyReference.cache
+P:\VB.NET\SWX\WindowsFormsApp9\obj\Debug\Interop.SldWorks.dll
+P:\VB.NET\SWX\WindowsFormsApp9\obj\Debug\Interop.SwCommands.dll
+P:\VB.NET\SWX\WindowsFormsApp9\obj\Debug\Interop.SwConst.dll
+P:\VB.NET\SWX\WindowsFormsApp9\obj\Debug\WindowsFormsApp9.csproj.ResolveComReference.cache
+P:\VB.NET\SWX\WindowsFormsApp9\obj\Debug\WindowsFormsApp9.Form1.resources
+P:\VB.NET\SWX\WindowsFormsApp9\obj\Debug\WindowsFormsApp9.Properties.Resources.resources
+P:\VB.NET\SWX\WindowsFormsApp9\obj\Debug\WindowsFormsApp9.csproj.GenerateResource.cache
+P:\VB.NET\SWX\WindowsFormsApp9\obj\Debug\WindowsFormsApp9.csproj.CoreCompileInputs.cache
+P:\VB.NET\SWX\WindowsFormsApp9\obj\Debug\WindowsFormsApp9.exe
+P:\VB.NET\SWX\WindowsFormsApp9\obj\Debug\WindowsFormsApp9.pdb
+P:\VB.NET\SWX\Part Automation Tool 1\obj\Debug\WindowsFormsApp9.csproj.AssemblyReference.cache
+P:\VB.NET\SWX\Part Automation Tool 1\obj\Debug\Interop.SldWorks.dll
+P:\VB.NET\SWX\Part Automation Tool 1\obj\Debug\Interop.SwCommands.dll
+P:\VB.NET\SWX\Part Automation Tool 1\obj\Debug\Interop.SwConst.dll
+P:\VB.NET\SWX\Part Automation Tool 1\obj\Debug\WindowsFormsApp9.csproj.ResolveComReference.cache
+P:\VB.NET\SWX\Part Automation Tool 1\obj\Debug\WindowsFormsApp9.Form1.resources
+P:\VB.NET\SWX\Part Automation Tool 1\obj\Debug\WindowsFormsApp9.Properties.Resources.resources
+P:\VB.NET\SWX\Part Automation Tool 1\obj\Debug\WindowsFormsApp9.csproj.GenerateResource.cache
+P:\VB.NET\SWX\Part Automation Tool 1\obj\Debug\WindowsFormsApp9.csproj.CoreCompileInputs.cache
+P:\VB.NET\SWX\Part Automation Tool 1\obj\Debug\WindowsFormsApp9.exe
+P:\VB.NET\SWX\Part Automation Tool 1\obj\Debug\WindowsFormsApp9.pdb
+P:\VB.NET\SWX\Part Automation Tool 1\bin\Debug\WindowsFormsApp9.exe.config
+P:\VB.NET\SWX\Part Automation Tool 1\bin\Debug\WindowsFormsApp9.exe
+P:\VB.NET\SWX\Part Automation Tool 1\bin\Debug\WindowsFormsApp9.pdb
+P:\VB.NET\SWX\Part Automation Tool 1\bin\Debug\Interop.SldWorks.dll
+P:\VB.NET\SWX\Part Automation Tool 1\bin\Debug\Interop.SwCommands.dll
