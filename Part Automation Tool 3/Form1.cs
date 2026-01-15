@@ -57,17 +57,7 @@ namespace WindowsFormsApp9
 
             swModel.SetUserPreferenceIntegerValue((int)swUserPreferenceIntegerValue_e.swUnitsLinear, (int)swLengthUnit_e.swMM);
 
-            PartDoc swPart = (PartDoc)swModel;
-
-            if (rbtnBrass.Checked ==true )
-            {
-                swPart.SetMaterialPropertyName2("", "", "Brass");
-            }
-
-            if (rbtnAL.Checked == true)
-            {
-                swPart.SetMaterialPropertyName2("", "", "1060-H12 Rod (SS)");
-            }
+            
 
             bool boolstat;
             boolstat = swModel.Extension.SelectByID2("Front Plane", "PLANE", 0, 0, 0, false, 0, null, 0);
